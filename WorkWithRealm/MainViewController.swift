@@ -38,7 +38,23 @@ final class MainViewController: UIViewController {
     }
     
     @objc func tapButton() {
-        createAlertController()
+        //createAlertController()
+        let shoppingList = TaskLists()
+        
+        let milk = Task()
+        milk.name = "Молоко"
+        milk.note = "2 литра"
+        
+        shoppingList.tasks.append(milk)
+        
+        let bread = Task(value: ["Хлеб","Ржаной",Date(), true])
+        let fruits = Task(value: ["name": "Яблоки", "note" : "Пару кг"])
+        
+        shoppingList.tasks.insert(contentsOf: [bread, fruits], at: 1)
+        
+        DispatchQueue.main.async {
+            StorageManager.saveData([shoppingList])
+        }
     }
     
     private func createAlertController() {

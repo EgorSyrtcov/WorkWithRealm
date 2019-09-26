@@ -12,6 +12,11 @@
 		2E066606233BB1D900B8275C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E066605233BB1D900B8275C /* Assets.xcassets */; };
 		2E066609233BB1D900B8275C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E066607233BB1D900B8275C /* LaunchScreen.storyboard */; };
 		2E066613233BB64F00B8275C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E066612233BB64F00B8275C /* SnapKit.framework */; };
+		2EB60338233CAC9700B24E0A /* TaskLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB60337233CAC9700B24E0A /* TaskLists.swift */; };
+		2EB6033A233CACA500B24E0A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB60339233CACA500B24E0A /* Task.swift */; };
+		2EB6033C233CB43300B24E0A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB6033B233CB43300B24E0A /* Realm.framework */; };
+		2EB6033E233CB44300B24E0A /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EB6033D233CB44300B24E0A /* RealmSwift.framework */; };
+		2EB60340233CC9B400B24E0A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6033F233CC9B400B24E0A /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		2E066608233BB1D900B8275C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E06660A233BB1D900B8275C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E066612233BB64F00B8275C /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		2EB60337233CAC9700B24E0A /* TaskLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLists.swift; sourceTree = "<group>"; };
+		2EB60339233CACA500B24E0A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		2EB6033B233CB43300B24E0A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		2EB6033D233CB44300B24E0A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		2EB6033F233CC9B400B24E0A /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB6033E233CB44300B24E0A /* RealmSwift.framework in Frameworks */,
+				2EB6033C233CB43300B24E0A /* Realm.framework in Frameworks */,
 				2E066613233BB64F00B8275C /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +70,9 @@
 			children = (
 				2E0665FE233BB1D600B8275C /* AppDelegate.swift */,
 				2E066600233BB1D600B8275C /* MainViewController.swift */,
+				2EB6033F233CC9B400B24E0A /* StorageManager.swift */,
+				2EB60337233CAC9700B24E0A /* TaskLists.swift */,
+				2EB60339233CACA500B24E0A /* Task.swift */,
 				2E066605233BB1D900B8275C /* Assets.xcassets */,
 				2E066607233BB1D900B8275C /* LaunchScreen.storyboard */,
 				2E06660A233BB1D900B8275C /* Info.plist */,
@@ -68,6 +83,8 @@
 		2E066611233BB64F00B8275C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2EB6033D233CB44300B24E0A /* RealmSwift.framework */,
+				2EB6033B233CB43300B24E0A /* Realm.framework */,
 				2E066612233BB64F00B8275C /* SnapKit.framework */,
 			);
 			name = Frameworks;
@@ -149,6 +166,8 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework/",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework/",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework/",
 			);
 			outputFileListPaths = (
 			);
@@ -165,6 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB6033A233CACA500B24E0A /* Task.swift in Sources */,
+				2EB60338233CAC9700B24E0A /* TaskLists.swift in Sources */,
+				2EB60340233CC9B400B24E0A /* StorageManager.swift in Sources */,
 				2E066601233BB1D600B8275C /* MainViewController.swift in Sources */,
 				2E0665FF233BB1D600B8275C /* AppDelegate.swift in Sources */,
 			);
